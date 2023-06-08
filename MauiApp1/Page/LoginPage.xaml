@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Page.LoginPage"
+             xmlns:y="clr-namespace:MauiApp1.Controls;assembly=MauiApp1"
+             Title="LoginPage"
+             BackgroundColor="Black" 
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="220" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+
+        </Grid.RowDefinitions>
+        <Path Stroke="black" Data="m-0.34,-38.50498l348.00001,0l0,144.58898c-174,0 -174,55.09106 -348.00001,23.78932l0,-168.37831l0,0.00001z" Fill="#ef6515"/>
+        <StackLayout>
+            <Frame BackgroundColor="White" HeightRequest="60" CornerRadius="30" Padding="0" Margin="0,100,0,0" HorizontalOptions="Center">
+                <Image Source="user.png" Aspect="AspectFill"  Margin="0" HeightRequest="70" WidthRequest="60"/>
+            </Frame>
+        </StackLayout>
+
+        <Grid RowSpacing="5" Grid.Row="1" Margin="17,15,10,15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <VerticalStackLayout Padding="10">
+
+
+                <Label 
+                    Text="Welcome Back!"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start"
+                    TextColor="White"   
+                    FontSize="45"
+                    FontAttributes="Bold" />
+
+                <y:RoundedEntry 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    Margin="10">
+                </y:RoundedEntry>
+
+
+
+                <Label Text="Forgot Password ?"
+                       TextColor="OrangeRed"
+                       TextDecorations="Underline"
+                       HorizontalOptions="End">
+
+                </Label>
+                
+
+                    <Grid ColumnDefinitions="*,*">
+                    <Label 
+                   
+                       Text="Sign Up"
+                       TextColor="White"
+                       TextDecorations="Underline"
+                       HorizontalOptions="Start">
+
+                    </Label>
+
+                   
+
+                </Grid>
+
+
+                <Button BackgroundColor="OrangeRed" WidthRequest="120" HeightRequest="40" HorizontalOptions="End" Margin="30,0,0,0" >
+
+                </Button>
+
+            </VerticalStackLayout>
+
+
+        </Grid>
+    </Grid>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+</ContentPage>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.pages.loginPage"
+             xmlns:y="MauiApp1.pages.RoundedEntry"
+             Title="loginPage"
+             BackgroundColor="Black" 
+             Shell.NavBarIsVisible="False"
+             >
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="Welcome Back!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start"
+            TextColor="White"
+            FontSize="45"
+            FontAttributes="Bold" />
+        <Entry Placeholder="exemple@gmail.com" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center">
+            
+        </Entry>
+
+        <Entry Placeholder="password" 
+               IsPassword="True"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center">
+
+        </Entry>
+        <Label Text="Forgot"></Label>
+        
+        
+        
+    </VerticalStackLayout>
+</ContentPage>
